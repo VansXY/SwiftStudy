@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FiveDaysViewController" customModule="XYSwiftDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="clickActionSheet" destination="nwB-CD-Tw3" id="hVm-ep-87q"/>
+                <outlet property="clickAlert" destination="DPW-JO-Vcd" id="41b-kN-0yd"/>
+                <outlet property="clickAlertDismiss" destination="sMe-65-quV" id="Hkb-xx-W6S"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPW-JO-Vcd">
+                    <rect key="frame" x="100" y="130" width="175" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.7392399288" blue="0.27429855149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="WCx-Ua-8oD"/>
+                    </constraints>
+                    <state key="normal" title="点我alert">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickAlertBtn:" destination="-1" eventType="touchUpInside" id="iEX-vw-LNb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwB-CD-Tw3">
+                    <rect key="frame" x="100" y="200" width="175" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Y8X-dz-fMq"/>
+                    </constraints>
+                    <state key="normal" title="点我actionSheet">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickActionSheetBtn:" destination="-1" eventType="touchUpInside" id="svW-e3-KsV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rf6-ed-ykf">
+                    <rect key="frame" x="100" y="270" width="175" height="40"/>
+                    <color key="backgroundColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="jsi-pX-MCl"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="xP2-al-fBx"/>
+                    </constraints>
+                    <state key="normal" title="点我添加输入框">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickAlertTextfield:" destination="-1" eventType="touchUpInside" id="Odc-av-DaC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMe-65-quV">
+                    <rect key="frame" x="100" y="340" width="175" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="1fa-4V-oMo"/>
+                        <constraint firstAttribute="height" constant="40" id="7UQ-h8-vje"/>
+                    </constraints>
+                    <state key="normal" title="点我弹框自动消失">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickAlertDismiss:" destination="-1" eventType="touchUpInside" id="KqY-1l-JbU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DPW-JO-Vcd" secondAttribute="trailing" constant="100" id="27q-7k-q18"/>
+                <constraint firstItem="sMe-65-quV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="5o7-ae-xE5"/>
+                <constraint firstItem="DPW-JO-Vcd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="9GM-s4-xXN"/>
+                <constraint firstAttribute="trailing" secondItem="sMe-65-quV" secondAttribute="trailing" constant="100" id="CH4-cc-Af5"/>
+                <constraint firstItem="DPW-JO-Vcd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="130" id="CPP-NO-kxS"/>
+                <constraint firstItem="nwB-CD-Tw3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="H5u-Px-0ZY"/>
+                <constraint firstItem="rf6-ed-ykf" firstAttribute="top" secondItem="nwB-CD-Tw3" secondAttribute="bottom" constant="30" id="K6n-W3-4KB"/>
+                <constraint firstItem="nwB-CD-Tw3" firstAttribute="centerX" secondItem="DPW-JO-Vcd" secondAttribute="centerX" id="Qrt-bf-eGz"/>
+                <constraint firstItem="nwB-CD-Tw3" firstAttribute="top" secondItem="DPW-JO-Vcd" secondAttribute="bottom" constant="30" id="aV7-Vb-bFL"/>
+                <constraint firstItem="rf6-ed-ykf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="bIf-Wh-Vuu"/>
+                <constraint firstAttribute="trailing" secondItem="rf6-ed-ykf" secondAttribute="trailing" constant="100" id="eMN-Lz-Jhy"/>
+                <constraint firstAttribute="trailing" secondItem="nwB-CD-Tw3" secondAttribute="trailing" constant="100" id="n5F-gI-j1e"/>
+                <constraint firstItem="sMe-65-quV" firstAttribute="top" secondItem="rf6-ed-ykf" secondAttribute="bottom" constant="30" id="r59-uN-Msk"/>
+            </constraints>
+            <point key="canvasLocation" x="-153" y="163"/>
+        </view>
+    </objects>
+</document>
