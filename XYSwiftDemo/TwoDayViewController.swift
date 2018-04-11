@@ -38,7 +38,6 @@ class TwoDayViewController: UIViewController, UISearchBarDelegate, UITableViewDe
         searchBar.frame = CGRect(x:0, y:NavgationHeight, width:Double(KscreenWidth), height:30)
         searchBar.delegate = self
         self.view.addSubview(searchBar)
-
         tableView.frame = CGRect(x:0, y:NavgationHeight + 30, width:Double(KscreenWidth), height:Double(KscreenHeight))
         tableView.delegate = self
         tableView.dataSource = self

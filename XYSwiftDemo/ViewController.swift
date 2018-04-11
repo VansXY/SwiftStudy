@@ -17,13 +17,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var sectionArray:[String] = ["第一周", "第二周", "第三周", "第四周"]
     var dataAarray1:[String] = ["布局控件", "搜索框", "collectionView", "分享和Sqlite数据库", "弹框", "动画", "UserDefault本地存储"]
-    var dataAarray2:[String] = ["1", "2", "3", "4", "5", "6", "7"]
+    var dataAarray2:[String] = ["NSURLSession", "发送本地通知", "图片处理类", "Alamofire", "5", "6", "7"]
     var tableView: UITableView?
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let backBarButton = UIBarButtonItem.init()
         backBarButton.title = ""
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = backBarButton
@@ -149,6 +148,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         } else if indexPath.section == 1 && indexPath.row == 1 {
             let ScheduleVC = ScheduleNotificationViewController()
             self.navigationController?.pushViewController(ScheduleVC, animated: true)
+        } else if indexPath.section == 1 && indexPath.row == 2 {
+            let ImageVC = ImageViewController()
+            self.navigationController?.pushViewController(ImageVC, animated: true)
+        } else if indexPath.section == 1 && indexPath.row == 3 {
+            let AlamofireVC = AlamofireViewController()
+            self.navigationController?.pushViewController(AlamofireVC, animated: true)
         } else {
             self.navigationController?.pushViewController(SecondViewController(), animated: true)
         }

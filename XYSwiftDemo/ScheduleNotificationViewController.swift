@@ -40,6 +40,8 @@ extension ScheduleNotificationViewController {
         button.backgroundColor = UIColor.orange
         button.addTarget(self, action: #selector(scheduleNotification(_ :)), for: .touchUpInside)
         self.view.addSubview(button)
+        
+        
     }
     
     @objc func scheduleNotification (_ button : UIButton) {
