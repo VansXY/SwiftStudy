@@ -154,7 +154,7 @@ class AlamofireViewController: UIViewController {
 //        self.progressView.setProgress(Float(progress.fractionCompleted), animated: true)
 //        print("当前进度：\(progress.fractionCompleted*100)%");
 //    }
-    
+    /// 可以用持久化，存储下载的data，下载完成后，删除临时文件，下载中时，不断的覆盖
     func downloadResult(response:DownloadResponse<Data>) {
         switch response.result {
         case .success(_):

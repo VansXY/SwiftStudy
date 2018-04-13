@@ -43,6 +43,7 @@
 		E16CD44F2022E3D2006DC296 /* SixDaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16CD44E2022E3D2006DC296 /* SixDaysViewController.swift */; };
 		E19E97FB2044014600B382A1 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E97FA2044014600B382A1 /* StringExtension.swift */; };
 		E19FDC4E207DA6EA00D50154 /* AlamofireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FDC4D207DA6EA00D50154 /* AlamofireViewController.swift */; };
+		E19FDC532080582B00D50154 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FDC522080582B00D50154 /* WebViewController.swift */; };
 		E1B21E272041621400DD3784 /* ScheduleNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B21E262041621400DD3784 /* ScheduleNotificationViewController.swift */; };
 		E1B2A3542023091A00CAE077 /* SevenDaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B2A3532023091A00CAE077 /* SevenDaysViewController.swift */; };
 		E1B2A35720231D1F00CAE077 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B2A35620231D1F00CAE077 /* GuideViewController.swift */; };
@@ -115,6 +116,7 @@
 		E19E97FA2044014600B382A1 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		E19FDC4D207DA6EA00D50154 /* AlamofireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireViewController.swift; sourceTree = "<group>"; };
 		E19FDC50207DB10900D50154 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		E19FDC522080582B00D50154 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		E1B21E262041621400DD3784 /* ScheduleNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleNotificationViewController.swift; sourceTree = "<group>"; };
 		E1B2A3532023091A00CAE077 /* SevenDaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SevenDaysViewController.swift; sourceTree = "<group>"; };
 		E1B2A35620231D1F00CAE077 /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				E1B21E262041621400DD3784 /* ScheduleNotificationViewController.swift */,
 				E12746CD2071D1A40036B80E /* ImageViewController.swift */,
 				E19FDC4D207DA6EA00D50154 /* AlamofireViewController.swift */,
+				E19FDC522080582B00D50154 /* WebViewController.swift */,
 				E1B2A35520231D0F00CAE077 /* GuideFile */,
 				E16CD4492021A8A4006DC296 /* Extension */,
 				E16CD43E20205E47006DC296 /* SQLiteDB */,
@@ -512,6 +515,7 @@
 				E1B2A35720231D1F00CAE077 /* GuideViewController.swift in Sources */,
 				E1B2A3542023091A00CAE077 /* SevenDaysViewController.swift in Sources */,
 				E164AB6A20285995006F1EF6 /* URLSessionViewController.swift in Sources */,
+				E19FDC532080582B00D50154 /* WebViewController.swift in Sources */,
 				E1FCF41C200F3EC100A97215 /* CollectionHeaderView.swift in Sources */,
 				E1651D071FE7AEA2005D3F1A /* AppDelegate.swift in Sources */,
 				E16CD437201EF34C006DC296 /* WeiXinActivity.swift in Sources */,
@@ -695,8 +699,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N83ER9BKH3;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = XYSwiftDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Vickate.XYSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -712,8 +718,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N83ER9BKH3;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = XYSwiftDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Vickate.XYSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
