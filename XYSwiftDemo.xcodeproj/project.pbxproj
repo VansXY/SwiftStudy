@@ -44,9 +44,12 @@
 		E19E97FB2044014600B382A1 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E97FA2044014600B382A1 /* StringExtension.swift */; };
 		E19FDC4E207DA6EA00D50154 /* AlamofireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FDC4D207DA6EA00D50154 /* AlamofireViewController.swift */; };
 		E19FDC532080582B00D50154 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FDC522080582B00D50154 /* WebViewController.swift */; };
+		E19FDC572080975800D50154 /* AudioToolboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FDC562080975800D50154 /* AudioToolboxViewController.swift */; };
+		E19FDC5C2080A54800D50154 /* 轻轻.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E19FDC5B2080A54800D50154 /* 轻轻.m4a */; };
 		E1B21E272041621400DD3784 /* ScheduleNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B21E262041621400DD3784 /* ScheduleNotificationViewController.swift */; };
 		E1B2A3542023091A00CAE077 /* SevenDaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B2A3532023091A00CAE077 /* SevenDaysViewController.swift */; };
 		E1B2A35720231D1F00CAE077 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B2A35620231D1F00CAE077 /* GuideViewController.swift */; };
+		E1B30FAA208DDD50006128E2 /* test1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E1B30FA9208DDD50006128E2 /* test1.pdf */; };
 		E1B6B8A11FF5E48800B59099 /* OneDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B6B8A01FF5E48800B59099 /* OneDayView.swift */; };
 		E1FCF41A200F371400A97215 /* XYCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FCF419200F371400A97215 /* XYCollectionViewCell.swift */; };
 		E1FCF41C200F3EC100A97215 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FCF41B200F3EC100A97215 /* CollectionHeaderView.swift */; };
@@ -117,9 +120,12 @@
 		E19FDC4D207DA6EA00D50154 /* AlamofireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireViewController.swift; sourceTree = "<group>"; };
 		E19FDC50207DB10900D50154 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		E19FDC522080582B00D50154 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		E19FDC562080975800D50154 /* AudioToolboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioToolboxViewController.swift; sourceTree = "<group>"; };
+		E19FDC5B2080A54800D50154 /* 轻轻.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "轻轻.m4a"; sourceTree = "<group>"; };
 		E1B21E262041621400DD3784 /* ScheduleNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleNotificationViewController.swift; sourceTree = "<group>"; };
 		E1B2A3532023091A00CAE077 /* SevenDaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SevenDaysViewController.swift; sourceTree = "<group>"; };
 		E1B2A35620231D1F00CAE077 /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		E1B30FA9208DDD50006128E2 /* test1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test1.pdf; sourceTree = "<group>"; };
 		E1B6B8A01FF5E48800B59099 /* OneDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneDayView.swift; sourceTree = "<group>"; };
 		E1FCF419200F371400A97215 /* XYCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYCollectionViewCell.swift; sourceTree = "<group>"; };
 		E1FCF41B200F3EC100A97215 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
@@ -206,12 +212,13 @@
 				E12746CD2071D1A40036B80E /* ImageViewController.swift */,
 				E19FDC4D207DA6EA00D50154 /* AlamofireViewController.swift */,
 				E19FDC522080582B00D50154 /* WebViewController.swift */,
+				E19FDC562080975800D50154 /* AudioToolboxViewController.swift */,
 				E1B2A35520231D0F00CAE077 /* GuideFile */,
 				E16CD4492021A8A4006DC296 /* Extension */,
 				E16CD43E20205E47006DC296 /* SQLiteDB */,
 				E1B6B89D1FF5E3DC00B59099 /* UIStudyFile */,
 				E1651D3A1FE7C648005D3F1A /* StudyFile */,
-				E1651D0A1FE7AEA2005D3F1A /* Main.storyboard */,
+				E19FDC582080A1A400D50154 /* resource */,
 				E1651D0D1FE7AEA2005D3F1A /* Assets.xcassets */,
 				E1651D0F1FE7AEA2005D3F1A /* LaunchScreen.storyboard */,
 				E1651D121FE7AEA2005D3F1A /* Info.plist */,
@@ -279,6 +286,16 @@
 				E19E97FA2044014600B382A1 /* StringExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		E19FDC582080A1A400D50154 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				E1B30FA9208DDD50006128E2 /* test1.pdf */,
+				E19FDC5B2080A54800D50154 /* 轻轻.m4a */,
+				E1651D0A1FE7AEA2005D3F1A /* Main.storyboard */,
+			);
+			path = resource;
 			sourceTree = "<group>";
 		};
 		E1B2A35520231D0F00CAE077 /* GuideFile */ = {
@@ -413,9 +430,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1651D111FE7AEA2005D3F1A /* LaunchScreen.storyboard in Resources */,
+				E1B30FAA208DDD50006128E2 /* test1.pdf in Resources */,
 				E16CD44420216B01006DC296 /* data.db in Resources */,
 				E1651D0E1FE7AEA2005D3F1A /* Assets.xcassets in Resources */,
 				E1651D0C1FE7AEA2005D3F1A /* Main.storyboard in Resources */,
+				E19FDC5C2080A54800D50154 /* 轻轻.m4a in Resources */,
 				E16CD44820219F75006DC296 /* FiveDaysViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +522,7 @@
 				E1651D421FE7CBC6005D3F1A /* class与staitc关键字.swift in Sources */,
 				E19E97FB2044014600B382A1 /* StringExtension.swift in Sources */,
 				E1651D3E1FE7C648005D3F1A /* 控制流.swift in Sources */,
+				E19FDC572080975800D50154 /* AudioToolboxViewController.swift in Sources */,
 				E11D48AB2004B16D0044DCA0 /* Macro.swift in Sources */,
 				E1FCF41E200F3ED500A97215 /* CollectionFooterView.swift in Sources */,
 				E1651D091FE7AEA2005D3F1A /* ViewController.swift in Sources */,

@@ -157,6 +157,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         } else if indexPath.section == 1 && indexPath.row == 4 {
             let webVC = WebViewController()
             self.navigationController?.pushViewController(webVC, animated: true)
+        } else if indexPath.section == 1 && indexPath.row == 5 {
+            let AudioToolboxVC = AudioToolboxViewController()
+            self.navigationController?.pushViewController(AudioToolboxVC, animated: true)
         } else {
             self.navigationController?.pushViewController(SecondViewController(), animated: true)
         }
