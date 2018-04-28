@@ -41,6 +41,7 @@
 		E16CD44B2021A917006DC296 /* UIAlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16CD44A2021A917006DC296 /* UIAlertExtension.swift */; };
 		E16CD44D2021C022006DC296 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16CD44C2021C022006DC296 /* ViewFactory.swift */; };
 		E16CD44F2022E3D2006DC296 /* SixDaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16CD44E2022E3D2006DC296 /* SixDaysViewController.swift */; };
+		E18A1D652094811F00C2DC43 /* CoreLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18A1D642094811F00C2DC43 /* CoreLocationViewController.swift */; };
 		E19E97FB2044014600B382A1 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E97FA2044014600B382A1 /* StringExtension.swift */; };
 		E19FDC4E207DA6EA00D50154 /* AlamofireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FDC4D207DA6EA00D50154 /* AlamofireViewController.swift */; };
 		E19FDC532080582B00D50154 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FDC522080582B00D50154 /* WebViewController.swift */; };
@@ -116,6 +117,7 @@
 		E16CD44A2021A917006DC296 /* UIAlertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertExtension.swift; sourceTree = "<group>"; };
 		E16CD44C2021C022006DC296 /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
 		E16CD44E2022E3D2006DC296 /* SixDaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixDaysViewController.swift; sourceTree = "<group>"; };
+		E18A1D642094811F00C2DC43 /* CoreLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationViewController.swift; sourceTree = "<group>"; };
 		E19E97FA2044014600B382A1 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		E19FDC4D207DA6EA00D50154 /* AlamofireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireViewController.swift; sourceTree = "<group>"; };
 		E19FDC50207DB10900D50154 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				E19FDC4D207DA6EA00D50154 /* AlamofireViewController.swift */,
 				E19FDC522080582B00D50154 /* WebViewController.swift */,
 				E19FDC562080975800D50154 /* AudioToolboxViewController.swift */,
+				E18A1D642094811F00C2DC43 /* CoreLocationViewController.swift */,
 				E1B2A35520231D0F00CAE077 /* GuideFile */,
 				E16CD4492021A8A4006DC296 /* Extension */,
 				E16CD43E20205E47006DC296 /* SQLiteDB */,
@@ -546,6 +549,7 @@
 				E1499AFC1FE8ED3500B8445A /* VansXY_ Protocol.swift in Sources */,
 				E1651D441FE7D7AA005D3F1A /* 修饰符区别.swift in Sources */,
 				E1651D3F1FE7C648005D3F1A /* 类的初始化.swift in Sources */,
+				E18A1D652094811F00C2DC43 /* CoreLocationViewController.swift in Sources */,
 				E16CD44F2022E3D2006DC296 /* SixDaysViewController.swift in Sources */,
 				E1FCF41A200F371400A97215 /* XYCollectionViewCell.swift in Sources */,
 				E1651D401FE7C648005D3F1A /* 自定义函数.swift in Sources */,

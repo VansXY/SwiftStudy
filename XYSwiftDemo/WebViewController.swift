@@ -54,6 +54,7 @@ class WebViewController: UIViewController, UIWebViewDelegate, UITextFieldDelegat
         goBtn = UIButton(type: .custom)
         goBtn.setTitle("Go", for: .normal)
         goBtn.setTitleColor(UIColor.black, for: .normal)
+        goBtn.setTitleColor(UIColor.gray, for: .highlighted)
         goBtn.addTarget(self, action: #selector(clickGoBtn(_ :)), for: .touchUpInside)
         self.view.addSubview(goBtn)
         goBtn.snp.makeConstraints { (make) in
@@ -71,10 +72,6 @@ class WebViewController: UIViewController, UIWebViewDelegate, UITextFieldDelegat
             make.bottom.equalTo(self.view)
             make.centerX.equalTo(self.view)
         }
-        
-        
-        
-
     }
     
     func loadWebViewWithUrl(urlString: String) {
@@ -125,7 +122,11 @@ class WebViewController: UIViewController, UIWebViewDelegate, UITextFieldDelegat
     }
     
     @objc func clickGoBtn(_ sender:UIButton) {
-        
+        if (textField.text!.hasPrefix("http://")) {
+            self.loadWebViewWithUrl(urlString: textField.text!)
+        } else {
+            print("请输入正确的网址")
+        }
     }
     
     @objc func segmentValueChange(_ sender:UISegmentedControl) {
