@@ -40,4 +40,11 @@ extension SecondViewController {
     }
 }
 
+extension SecondViewController {
+    
+    private func prictics (closure:() -> String) -> String {
+        return closure()
+    }
+    
+}
 

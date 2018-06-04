@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import CoreLocation
 
-class CoreLocationViewController: UIViewController {
+class CoreLocationViewController: UIViewController, CLLocationManagerDelegate {
+    
+    //定位管理器
+    let locationManager:CLLocationManager = CLLocationManager()
     
     /*
      1.定位精度的设置
@@ -23,11 +27,27 @@ class CoreLocationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // 设置定位服务管理器代理
+        locationManager.delegate = self
+        //设置定位进度
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        //更新距离
+        locationManager.distanceFilter = 100
+        locationManager.requestAlwaysAuthorization()
+        if CLLocationManager.locationServicesEnabled() {
+            //允许使用定位服务的话，开启定位服务更新
+            locationManager.startUpdatingLocation()
+        }
         setUI()
     }
     
     func setUI() {
         self.title = "CoreLocationViewController"
         self.view.backgroundColor = UIColor.white
+        
+        let currentLocation = CLLocation(latitude: 52.104526, longitude: 51.111151)
+        let targetLocation = CLLocation(latitude: 52.105526, longitude: 51.141151)
+        let distance:CLLocationDistance = currentLocation.distance(from: targetLocation)
+        print("两点间距离是：\(distance)")
     }
 }
