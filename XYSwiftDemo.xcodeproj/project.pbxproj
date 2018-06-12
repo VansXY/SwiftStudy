@@ -52,6 +52,13 @@
 		E1B2A35720231D1F00CAE077 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B2A35620231D1F00CAE077 /* GuideViewController.swift */; };
 		E1B30FAA208DDD50006128E2 /* test1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E1B30FA9208DDD50006128E2 /* test1.pdf */; };
 		E1B6B8A11FF5E48800B59099 /* OneDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B6B8A01FF5E48800B59099 /* OneDayView.swift */; };
+		E1DCF87A20C63DA700B9F6AB /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DCF87920C63DA700B9F6AB /* AuthenticationServices.framework */; };
+		E1DCF87E20C63DA700B9F6AB /* CredentialProviderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DCF87D20C63DA700B9F6AB /* CredentialProviderViewController.m */; };
+		E1DCF88120C63DA700B9F6AB /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1DCF87F20C63DA700B9F6AB /* MainInterface.storyboard */; };
+		E1DCF88620C63DA700B9F6AB /* XYSwiftActionExtention.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E1DCF87820C63DA700B9F6AB /* XYSwiftActionExtention.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E1DCF89320C63DC500B9F6AB /* UnwantedCommunicationReportingExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DCF89220C63DC500B9F6AB /* UnwantedCommunicationReportingExtension.m */; };
+		E1DCF89620C63DC500B9F6AB /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1DCF89420C63DC500B9F6AB /* MainInterface.storyboard */; };
+		E1DCF89A20C63DC500B9F6AB /* XYSwiftUnwantExtention.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E1DCF88F20C63DC500B9F6AB /* XYSwiftUnwantExtention.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E1FCF41A200F371400A97215 /* XYCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FCF419200F371400A97215 /* XYCollectionViewCell.swift */; };
 		E1FCF41C200F3EC100A97215 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FCF41B200F3EC100A97215 /* CollectionHeaderView.swift */; };
 		E1FCF41E200F3ED500A97215 /* CollectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FCF41D200F3ED500A97215 /* CollectionFooterView.swift */; };
@@ -72,7 +79,36 @@
 			remoteGlobalIDString = E1651D021FE7AEA2005D3F1A;
 			remoteInfo = XYSwiftDemo;
 		};
+		E1DCF88420C63DA700B9F6AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1651CFB1FE7AEA2005D3F1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1DCF87720C63DA700B9F6AB;
+			remoteInfo = XYSwiftActionExtention;
+		};
+		E1DCF89820C63DC500B9F6AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1651CFB1FE7AEA2005D3F1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1DCF88E20C63DC500B9F6AB;
+			remoteInfo = XYSwiftUnwantExtention;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E1DCF88A20C63DA700B9F6AB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E1DCF88620C63DA700B9F6AB /* XYSwiftActionExtention.appex in Embed App Extensions */,
+				E1DCF89A20C63DC500B9F6AB /* XYSwiftUnwantExtention.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0C1AB2232B18237DCA30ADDC /* Pods-XYSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYSwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XYSwiftDemo/Pods-XYSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +165,18 @@
 		E1B2A35620231D1F00CAE077 /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		E1B30FA9208DDD50006128E2 /* test1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test1.pdf; sourceTree = "<group>"; };
 		E1B6B8A01FF5E48800B59099 /* OneDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneDayView.swift; sourceTree = "<group>"; };
+		E1DCF87820C63DA700B9F6AB /* XYSwiftActionExtention.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XYSwiftActionExtention.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1DCF87920C63DA700B9F6AB /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		E1DCF87C20C63DA700B9F6AB /* CredentialProviderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CredentialProviderViewController.h; sourceTree = "<group>"; };
+		E1DCF87D20C63DA700B9F6AB /* CredentialProviderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CredentialProviderViewController.m; sourceTree = "<group>"; };
+		E1DCF88020C63DA700B9F6AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		E1DCF88220C63DA700B9F6AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1DCF88320C63DA700B9F6AB /* XYSwiftActionExtention.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XYSwiftActionExtention.entitlements; sourceTree = "<group>"; };
+		E1DCF88F20C63DC500B9F6AB /* XYSwiftUnwantExtention.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XYSwiftUnwantExtention.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1DCF89120C63DC500B9F6AB /* UnwantedCommunicationReportingExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnwantedCommunicationReportingExtension.h; sourceTree = "<group>"; };
+		E1DCF89220C63DC500B9F6AB /* UnwantedCommunicationReportingExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnwantedCommunicationReportingExtension.m; sourceTree = "<group>"; };
+		E1DCF89520C63DC500B9F6AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		E1DCF89720C63DC500B9F6AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1FCF419200F371400A97215 /* XYCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYCollectionViewCell.swift; sourceTree = "<group>"; };
 		E1FCF41B200F3EC100A97215 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
 		E1FCF41D200F3ED500A97215 /* CollectionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionFooterView.swift; sourceTree = "<group>"; };
@@ -159,6 +207,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E1DCF87520C63DA700B9F6AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1DCF87A20C63DA700B9F6AB /* AuthenticationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1DCF88C20C63DC500B9F6AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -180,6 +243,8 @@
 				E1651D051FE7AEA2005D3F1A /* XYSwiftDemo */,
 				E1651D1A1FE7AEA2005D3F1A /* XYSwiftDemoTests */,
 				E1651D251FE7AEA2005D3F1A /* XYSwiftDemoUITests */,
+				E1DCF87B20C63DA700B9F6AB /* XYSwiftActionExtention */,
+				E1DCF89020C63DC500B9F6AB /* XYSwiftUnwantExtention */,
 				E1651D041FE7AEA2005D3F1A /* Products */,
 				E16CD43A201F1559006DC296 /* Frameworks */,
 				56286C35792B0DE53888A8F3 /* Pods */,
@@ -192,6 +257,8 @@
 				E1651D031FE7AEA2005D3F1A /* XYSwiftDemo.app */,
 				E1651D171FE7AEA2005D3F1A /* XYSwiftDemoTests.xctest */,
 				E1651D221FE7AEA2005D3F1A /* XYSwiftDemoUITests.xctest */,
+				E1DCF87820C63DA700B9F6AB /* XYSwiftActionExtention.appex */,
+				E1DCF88F20C63DC500B9F6AB /* XYSwiftUnwantExtention.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -268,6 +335,7 @@
 			children = (
 				E16CD43B201F155A006DC296 /* libsqlite3.0.tbd */,
 				1C65EDB1C94A9968DCC5C78E /* Pods_XYSwiftDemo.framework */,
+				E1DCF87920C63DA700B9F6AB /* AuthenticationServices.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -322,6 +390,29 @@
 			path = UIStudyFile;
 			sourceTree = "<group>";
 		};
+		E1DCF87B20C63DA700B9F6AB /* XYSwiftActionExtention */ = {
+			isa = PBXGroup;
+			children = (
+				E1DCF87C20C63DA700B9F6AB /* CredentialProviderViewController.h */,
+				E1DCF87D20C63DA700B9F6AB /* CredentialProviderViewController.m */,
+				E1DCF87F20C63DA700B9F6AB /* MainInterface.storyboard */,
+				E1DCF88220C63DA700B9F6AB /* Info.plist */,
+				E1DCF88320C63DA700B9F6AB /* XYSwiftActionExtention.entitlements */,
+			);
+			path = XYSwiftActionExtention;
+			sourceTree = "<group>";
+		};
+		E1DCF89020C63DC500B9F6AB /* XYSwiftUnwantExtention */ = {
+			isa = PBXGroup;
+			children = (
+				E1DCF89120C63DC500B9F6AB /* UnwantedCommunicationReportingExtension.h */,
+				E1DCF89220C63DC500B9F6AB /* UnwantedCommunicationReportingExtension.m */,
+				E1DCF89420C63DC500B9F6AB /* MainInterface.storyboard */,
+				E1DCF89720C63DC500B9F6AB /* Info.plist */,
+			);
+			path = XYSwiftUnwantExtention;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -335,10 +426,13 @@
 				E1651D011FE7AEA2005D3F1A /* Resources */,
 				5CA5EF5ED389A5D3148DABBA /* [CP] Embed Pods Frameworks */,
 				C492346A050888E9F9B20788 /* [CP] Copy Pods Resources */,
+				E1DCF88A20C63DA700B9F6AB /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E1DCF88520C63DA700B9F6AB /* PBXTargetDependency */,
+				E1DCF89920C63DC500B9F6AB /* PBXTargetDependency */,
 			);
 			name = XYSwiftDemo;
 			productName = XYSwiftDemo;
@@ -381,6 +475,40 @@
 			productReference = E1651D221FE7AEA2005D3F1A /* XYSwiftDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		E1DCF87720C63DA700B9F6AB /* XYSwiftActionExtention */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1DCF88920C63DA700B9F6AB /* Build configuration list for PBXNativeTarget "XYSwiftActionExtention" */;
+			buildPhases = (
+				E1DCF87420C63DA700B9F6AB /* Sources */,
+				E1DCF87520C63DA700B9F6AB /* Frameworks */,
+				E1DCF87620C63DA700B9F6AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XYSwiftActionExtention;
+			productName = XYSwiftActionExtention;
+			productReference = E1DCF87820C63DA700B9F6AB /* XYSwiftActionExtention.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E1DCF88E20C63DC500B9F6AB /* XYSwiftUnwantExtention */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1DCF89B20C63DC500B9F6AB /* Build configuration list for PBXNativeTarget "XYSwiftUnwantExtention" */;
+			buildPhases = (
+				E1DCF88B20C63DC500B9F6AB /* Sources */,
+				E1DCF88C20C63DC500B9F6AB /* Frameworks */,
+				E1DCF88D20C63DC500B9F6AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XYSwiftUnwantExtention;
+			productName = XYSwiftUnwantExtention;
+			productReference = E1DCF88F20C63DC500B9F6AB /* XYSwiftUnwantExtention.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -405,6 +533,14 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = E1651D021FE7AEA2005D3F1A;
 					};
+					E1DCF87720C63DA700B9F6AB = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
+					};
+					E1DCF88E20C63DC500B9F6AB = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = E1651CFE1FE7AEA2005D3F1A /* Build configuration list for PBXProject "XYSwiftDemo" */;
@@ -423,6 +559,8 @@
 				E1651D021FE7AEA2005D3F1A /* XYSwiftDemo */,
 				E1651D161FE7AEA2005D3F1A /* XYSwiftDemoTests */,
 				E1651D211FE7AEA2005D3F1A /* XYSwiftDemoUITests */,
+				E1DCF87720C63DA700B9F6AB /* XYSwiftActionExtention */,
+				E1DCF88E20C63DC500B9F6AB /* XYSwiftUnwantExtention */,
 			);
 		};
 /* End PBXProject section */
@@ -453,6 +591,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1DCF87620C63DA700B9F6AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1DCF88120C63DA700B9F6AB /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1DCF88D20C63DC500B9F6AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1DCF89620C63DC500B9F6AB /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +729,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E1DCF87420C63DA700B9F6AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1DCF87E20C63DA700B9F6AB /* CredentialProviderViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1DCF88B20C63DC500B9F6AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1DCF89320C63DC500B9F6AB /* UnwantedCommunicationReportingExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -587,6 +757,16 @@
 			isa = PBXTargetDependency;
 			target = E1651D021FE7AEA2005D3F1A /* XYSwiftDemo */;
 			targetProxy = E1651D231FE7AEA2005D3F1A /* PBXContainerItemProxy */;
+		};
+		E1DCF88520C63DA700B9F6AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1DCF87720C63DA700B9F6AB /* XYSwiftActionExtention */;
+			targetProxy = E1DCF88420C63DA700B9F6AB /* PBXContainerItemProxy */;
+		};
+		E1DCF89920C63DC500B9F6AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1DCF88E20C63DC500B9F6AB /* XYSwiftUnwantExtention */;
+			targetProxy = E1DCF89820C63DC500B9F6AB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -605,6 +785,22 @@
 				E1651D101FE7AEA2005D3F1A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E1DCF87F20C63DA700B9F6AB /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1DCF88020C63DA700B9F6AB /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		E1DCF89420C63DC500B9F6AB /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1DCF89520C63DC500B9F6AB /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -817,6 +1013,82 @@
 			};
 			name = Release;
 		};
+		E1DCF88720C63DA700B9F6AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = XYSwiftActionExtention/XYSwiftActionExtention.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = XYSwiftActionExtention/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				PRODUCT_BUNDLE_IDENTIFIER = Vickate.XYSwiftDemo.XYSwiftActionExtention;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E1DCF88820C63DA700B9F6AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = XYSwiftActionExtention/XYSwiftActionExtention.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = XYSwiftActionExtention/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Vickate.XYSwiftDemo.XYSwiftActionExtention;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E1DCF89C20C63DC500B9F6AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N83ER9BKH3;
+				INFOPLIST_FILE = XYSwiftUnwantExtention/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				PRODUCT_BUNDLE_IDENTIFIER = Vickate.XYSwiftDemo.XYSwiftUnwantExtention;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1DCF89D20C63DC500B9F6AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N83ER9BKH3;
+				INFOPLIST_FILE = XYSwiftUnwantExtention/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Vickate.XYSwiftDemo.XYSwiftUnwantExtention;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -852,6 +1124,24 @@
 			buildConfigurations = (
 				E1651D321FE7AEA2005D3F1A /* Debug */,
 				E1651D331FE7AEA2005D3F1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1DCF88920C63DA700B9F6AB /* Build configuration list for PBXNativeTarget "XYSwiftActionExtention" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1DCF88720C63DA700B9F6AB /* Debug */,
+				E1DCF88820C63DA700B9F6AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1DCF89B20C63DC500B9F6AB /* Build configuration list for PBXNativeTarget "XYSwiftUnwantExtention" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1DCF89C20C63DC500B9F6AB /* Debug */,
+				E1DCF89D20C63DC500B9F6AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
